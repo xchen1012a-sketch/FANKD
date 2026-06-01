@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+coverage/
+**/target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Logs and temp files
+logs/
+*.log
+*.tmp
+*.cache
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Local environment and secrets
+.env.local
+.env.*.local
+*.local
+fankeda/config/application-local.properties
+
+# Editor and OS files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Agent/local tool state
+.claude/
+CLAUDE.md
+
+# Package manager caches
+.npm/
+.pnpm-store/
+

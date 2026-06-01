@@ -1,0 +1,99 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^wd-(.*)": "@wot-ui/ui/components/wd-$1/wd-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "饭刻达登录",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "饭刻达",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/stalls/index",
+      "style": {
+        "navigationBarTitleText": "窗口",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/stalls/detail",
+      "style": {
+        "navigationBarTitleText": "窗口详情"
+      }
+    },
+    {
+      "path": "pages/report/index",
+      "style": {
+        "navigationBarTitleText": "上报排队"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "subPages",
+      "pages": [
+        {
+          "path": "profile/index",
+          "style": {
+            "navigationBarTitleText": "个人设置"
+          }
+        },
+        {
+          "path": "feedback/index",
+          "style": {
+            "navigationBarTitleText": "推荐反馈"
+          }
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "饭刻达",
+    "navigationBarBackgroundColor": "#f7fbff",
+    "backgroundColor": "#f7fbff"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#5f7182",
+    "selectedColor": "#18724f",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/stalls/index",
+        "text": "窗口"
+      },
+      {
+        "pagePath": "pages/report/index",
+        "text": "上报"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的"
+      }
+    ]
+  }
+}
