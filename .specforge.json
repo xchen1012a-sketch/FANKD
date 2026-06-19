@@ -1,0 +1,25 @@
+{
+  "templateSource": "SpecForge",
+  "templateVersion": 2,
+  "multiProjectId": null,
+  "projects": [
+    {
+      "path": "fankeda",
+      "type": "backend",
+      "buildFiles": ["pom.xml"],
+      "installedAt": "2026-06-19T18:02:00+08:00"
+    },
+    {
+      "path": "fanf-uniapp",
+      "type": "frontend",
+      "buildFiles": ["package.json"],
+      "installedAt": "2026-06-19T18:02:00+08:00"
+    },
+    {
+      "path": "fankeda-admin-ui",
+      "type": "frontend",
+      "buildFiles": ["package.json"],
+      "installedAt": "2026-06-19T18:02:00+08:00"
+    }
+  ]
+}
