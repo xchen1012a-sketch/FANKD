@@ -39,6 +39,7 @@ desktop.ini
 # Agent/local tool state
 .claude/
 CLAUDE.md
+.ai-spec/sessions/
 
 # Package manager caches
 .npm/

@@ -1,0 +1,65 @@
+specVersion: 2
+
+spec:
+  multiProjectId: null
+  templateVersion: 2
+
+project:
+  name: fankeda
+  description: 校园智能就餐助手，提供食堂拥挤热力图、排队时间预测、最快窗口推荐和赶课模式
+  stage: new
+  type: generic
+  criticality: medium
+
+stack:
+  languages: [java, typescript, javascript]
+  frameworks: [spring-boot, vue, uniapp]
+  databases: [mysql]
+  packageManagers: [maven, npm, pnpm]
+
+commands:
+  build:
+    - cd fankeda && ./mvnw package
+    - cd fanf-uniapp && npm run build
+    - cd fankeda-admin-ui && pnpm build
+  test:
+    - cd fankeda && ./mvnw test
+  lint: null
+  typecheck: null
+  run:
+    - cd fankeda && ./mvnw spring-boot:run
+
+workflow:
+  branchModel: project-defined
+  mainBranch: main
+  integrationBranch: null
+  requirePlanForComplexTasks: true
+  requireContractForCrossBoundaryChanges: true
+
+quality:
+  coverageTarget: project-defined
+  securityGate: project-defined
+  fullTestSuiteOnEveryChange: false
+
+context:
+  projectSize: small
+  mode: auto
+  dailyEntry: business/quick-ref.md
+  quickRefStatus: TEMPLATE_PLACEHOLDER
+  quickRefMaxLines: 40
+  preferLiteCore: true
+  dynamicRouting: true
+  allowFullScanByDefault: false
+  requireContextUsageReport: true
+  projectSizeSignals:
+    fileCount: 0
+    buildFileCount: 3
+    hasDatabase: true
+    hasApi: true
+    hasAuth: false
+    hasCi: false
+    multiProject: true
+
+ai:
+  tools: [claude-code]
+  specPath: .ai-spec
